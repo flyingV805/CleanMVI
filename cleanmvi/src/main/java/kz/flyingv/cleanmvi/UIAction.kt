@@ -1,3 +1,3 @@
 package kz.flyingv.cleanmvi
 
-sealed interface UIAction
+interface UIAction

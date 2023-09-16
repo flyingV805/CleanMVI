@@ -1,4 +1,4 @@
-package kz.flyingv.cleanmvi.showcase.ui.theme
+package kz.flyingv.cleanmvi.showcase.defaults.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

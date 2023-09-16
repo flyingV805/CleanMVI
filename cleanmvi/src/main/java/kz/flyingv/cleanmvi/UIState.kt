@@ -1,3 +1,3 @@
 package kz.flyingv.cleanmvi
 
-sealed interface UIState
+interface UIState

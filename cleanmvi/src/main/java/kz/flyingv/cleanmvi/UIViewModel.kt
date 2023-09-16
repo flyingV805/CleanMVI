@@ -11,6 +11,8 @@ abstract class UIViewModel<S : UIState, in A : UIAction>(initialState: S): ViewM
 
     fun provideState(): StateFlow<S> = _uiState.asStateFlow()
 
+    protected fun currentState(): S = _uiState.value
+
     protected fun pushState(newState: S){
         _uiState.tryEmit(newState)
     }

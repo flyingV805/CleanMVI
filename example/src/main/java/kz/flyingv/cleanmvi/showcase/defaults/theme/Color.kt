@@ -1,4 +1,4 @@
-package kz.flyingv.cleanmvi.showcase.ui.theme
+package kz.flyingv.cleanmvi.showcase.defaults.theme
 
 import androidx.compose.ui.graphics.Color
 
