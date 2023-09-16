@@ -22,7 +22,7 @@ class FeatureViewModel @Inject constructor(
                     val newFact = useCase.invoke()
                     pushState(currentState().copy(
                         fact = newFact?.factContent,
-                        isLoading = true
+                        isLoading = false
                     ))
                 }
             }

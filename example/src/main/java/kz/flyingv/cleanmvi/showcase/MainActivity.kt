@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import dagger.hilt.android.AndroidEntryPoint
 import kz.flyingv.cleanmvi.showcase.defaults.theme.CleanMVITheme
+import kz.flyingv.cleanmvi.showcase.feature.ui.FeatureScreen
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -20,29 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             CleanMVITheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+                FeatureScreen()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CleanMVITheme {
-        Greeting("Android")
     }
 }
