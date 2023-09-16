@@ -4,6 +4,7 @@ import kz.flyingv.cleanmvi.UIAction
 
 sealed class FeatureAction: UIAction {
 
+    object UpdateFact: FeatureAction()
 
 
 }
