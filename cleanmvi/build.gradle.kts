@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         minSdk = 24
-        version = "0.0.1"
+        version = "0.0.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -49,7 +49,12 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "kz.flyingv.cleanmvi"
                 artifactId = "CleanMVI"
-                version = "0.0.1"
+                version = "0.0.2"
+
+                afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
+
+                //artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+
             }
         }
     }
