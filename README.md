@@ -2,7 +2,7 @@
 
 [![](https://jitpack.io/v/flyingV805/CleanMVI.svg)](https://jitpack.io/#flyingV805/CleanMVI)
 
-## Simple MVI library for Android. Designed to be used as a UI layer with a Clean Architecture.
+## Simple MVI library for Android. Designed to be used as a part of UI layer (Jetpack Compose) with a Clean Architecture.
 
 ## Install
 ### Jitpack
