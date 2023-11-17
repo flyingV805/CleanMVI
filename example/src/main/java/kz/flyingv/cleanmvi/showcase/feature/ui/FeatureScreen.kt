@@ -16,6 +16,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
+import kotlinx.coroutines.flow.collectLatest
 
 @Composable
 fun FeatureScreen(viewModel: FeatureViewModel = hiltViewModel()) {
@@ -55,5 +56,12 @@ fun FeatureScreen(viewModel: FeatureViewModel = hiltViewModel()) {
     LaunchedEffect(Unit){
         viewModel.reduce(FeatureAction.UpdateFact)
     }
+
+    LaunchedEffect(Unit){
+        viewModel.provideEvents().collectLatest {
+
+        }
+    }
+
 
 }

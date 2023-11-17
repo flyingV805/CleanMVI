@@ -50,11 +50,7 @@ afterEvaluate {
                 groupId = "kz.flyingv.cleanmvi"
                 artifactId = "CleanMVI"
                 version = "0.0.2"
-
                 afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
-
-                //artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
-
             }
         }
     }

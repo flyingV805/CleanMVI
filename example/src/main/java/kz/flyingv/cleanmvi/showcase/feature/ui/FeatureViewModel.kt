@@ -12,7 +12,7 @@ import javax.inject.Inject
 @HiltViewModel
 class FeatureViewModel @Inject constructor(
     private val useCase: FeatureUseCase
-): UIViewModel<FeatureState, FeatureAction>(
+): UIViewModel<FeatureState, FeatureAction, FeatureEvent>(
     initialState = FeatureState(),
     timeMachine = TimeMachineProvider<FeatureState, FeatureAction>().default()
 ) {
